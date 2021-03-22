@@ -1,7 +1,10 @@
----parent: Harmony 3 peripheral library application examples for SAM D21/DA1 family
-title: AC Sleepwalking 
+---
+
+parent: Harmony 3 peripheral library application examples for SAM D21/DA1 family
+title: AC Sleepwalking
 has_children: false
-has_toc: false---
+has_toc: false
+--- #any
 
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
@@ -22,21 +25,21 @@ Path of the application within the repository is **apps/ac/ac_sleepwalk_singlesh
 
 To build the application, refer to the following table and open the project using its IDE.
 
-| Project Name      | Description                                    |
-| ----------------- | ---------------------------------------------- |
-| sam_d21_xpro.X | MPLABX project for [SAM D21 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamd21-xpro) |
+| Project Name   | Description                                                                                                                              |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| sam_d21_xpro.X | MPLABX project for [SAM D21 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamd21-xpro)        |
 | sam_da1_xpro.X | MPLABX project for [SAM DA1 Xplained Pro Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMDA1-XPRO) |
-|||
+|                |                                                                                                                                          |
 
 ## Setting up the hardware
 
 The following table shows the target hardware for the application projects.
 
-| Project Name| Board|
-|:---------|:---------:|
-| sam_d21_xpro.X | [SAM D21 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamd21-xpro)
-| sam_da1_xpro.X | [SAM DA1 Xplained Pro Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMDA1-XPRO)
-|||
+| Project Name   |                                                         Board                                                         |
+| :------------- | :-------------------------------------------------------------------------------------------------------------------: |
+| sam_d21_xpro.X |    [SAM D21 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamd21-xpro)     |
+| sam_da1_xpro.X | [SAM DA1 Xplained Pro Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMDA1-XPRO) |
+|                |                                                                                                                       |
 
 ### Setting up [SAM D21 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamd21-xpro)
 
@@ -52,23 +55,23 @@ The following table shows the target hardware for the application projects.
 
 1. Open the Terminal application (Ex.:Tera term) on the computer
 2. Connect to the EDBG Virtual COM port and configure the serial settings as follows:
-    - Baud : 115200
-    - Data : 8 Bits
-    - Parity : None
-    - Stop : 1 Bit
-    - Flow Control : None
+   - Baud : 115200
+   - Data : 8 Bits
+   - Parity : None
+   - Stop : 1 Bit
+   - Flow Control : None
 3. Build and Program the application using its IDE
 4. Observe output message in console as follows:
 
-    ![output](images/output_ac_sleepwalk_singleshot.png)
+   ![output](images/output_ac_sleepwalk_singleshot.png)
 
 5. Console displays the message stating whether voltage at AC input is lower or greater than the internal bandgap voltage (1.1 V)
 6. LED toggles when comparison is done
 
 Below table shows the AC input pin and LED name for the board
 
-| Board| AC input pin | LED name|
-|------|----------|---------|
-| [SAM D21 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamd21-xpro) | pin 17 of the EXT1 connector | LED0 |
-| [SAM DA1 Xplained Pro Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMDA1-XPRO) | pin 17 of the EXT1 connector | LED0 |
-|||
+| Board                                                                                                                 | AC input pin                 | LED name |
+| --------------------------------------------------------------------------------------------------------------------- | ---------------------------- | -------- |
+| [SAM D21 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamd21-xpro)        | pin 17 of the EXT1 connector | LED0     |
+| [SAM DA1 Xplained Pro Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMDA1-XPRO) | pin 17 of the EXT1 connector | LED0     |
+|                                                                                                                       |                              |
