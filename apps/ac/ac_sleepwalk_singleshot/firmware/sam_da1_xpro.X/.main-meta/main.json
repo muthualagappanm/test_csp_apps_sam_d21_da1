@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "0.99.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_sam_d21_da1_conf_da1_ac_sleepwalk_singleshot",
-		"version": "0.99.01",
+		"version": "0.99.05",
 		"displayName": "AC Sleepwalking Example for SAM D21/DA1 Family",
 		"projectName": "ac_sleepwalk_singleshot_sam_da1_xpro",
 		"shortDescription": "This example application shows how to use the AC Peripheral library to perform a single shot comparison in standby sleep mode periodically and wake up the device at the end of a successful comparison.",
